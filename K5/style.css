@@ -1,0 +1,344 @@
+/* Mengatur margin dan padding awal untuk semua elemen */
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('assets/bghome.jpg');
+    background-size: 100%;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+}
+
+
+/* Navigasi utama */
+
+nav {
+    margin-top: 50px;
+    margin-right: 450px;
+    margin-left: 450px;
+    position: relative;
+    /* Membuat elemen child dengan posisi absolut */
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 10px;
+    background-color: #322C2B;
+    /* Warna latar belakang */
+    font-family: "Concert One", sans-serif;
+    border-radius: 40px;
+    /* Membuat sudut membulat */
+}
+
+
+/* Mengatur tata letak elemen dalam navigasi */
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    /* Menghilangkan bullet list */
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    position: relative;
+    /* Posisi relatif untuk penempatan logo */
+}
+
+
+/* Mengatur elemen individual dalam navigasi */
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    /* Menyelaraskan item secara vertikal */
+}
+
+
+/* Style untuk tautan (link) */
+
+nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    /* Menghilangkan garis bawah */
+    color: white;
+    font-size: 18px;
+}
+
+
+/* Warna tautan saat di-hover */
+
+nav ul li a:hover {
+    color: #AAB396;
+    /* Warna saat tautan di-hover */
+}
+
+
+/* Mengatur jarak bawah untuk elemen dengan class menu */
+
+.menu {
+    margin-bottom: 10px;
+}
+
+
+/* Style untuk logo dengan class urbanlogo */
+
+.urbanlogo {
+    position: absolute;
+    top: -35px;
+    /* background-color: #AAB396; */
+    background-color: #322C2B;
+    border-radius: 100%;
+    /* Membuat logo berbentuk bulat */
+    width: 98px;
+    /* Lebar logo */
+    transform: translateX(-50%);
+    /* Pusatkan logo */
+    height: auto;
+    /* Menjaga proporsi gambar */
+}
+
+.section-home {
+    margin: 15%;
+    text-align: center;
+    /* font-size: 50px; */
+    color: white;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.section-home>h2 {
+    color: white;
+    font-size: 100px;
+}
+
+.section-home>h4 {
+    font-size: 70px;
+}
+
+.section-home>p {
+    margin: 100px;
+    font-size: 100px;
+}
+
+.section-story {
+    padding: 10px;
+    background-color: rgba(228, 197, 158, 1);
+    /* width: ; */
+}
+
+.border {
+    margin: 100px;
+    padding: 15px;
+    background-color: rgba(128, 61, 59, 1);
+}
+
+.watermark {
+    content: watermark;
+    position: absolute;
+    z-index: -1;
+}
+
+.section-story img.left {
+    float: left;
+    max-inline-size: 100px;
+}
+
+.section-story img {
+    float: right;
+    max-inline-size: 300px;
+}
+
+.our-story {
+    color: black;
+    margin: 20px 0px 0px 0px;
+    padding: 25px;
+    text-align: center;
+    font-family: "Road Rage", sans-serif;
+    font-size: 80px;
+}
+
+.gambar-kanan {
+    /* display: flex; */
+    justify-content: space-between;
+    float: right;
+    z-index: 1;
+    position: absolute;
+    margin-left: 1210px;
+    margin-top: -8px;
+    /* width: 200px;
+    height: auto;
+    margin-left: 10px; */
+}
+
+.left {
+    /* justify-content: space-between; */
+    z-index: 1;
+    position: absolute;
+    margin-top: -100px;
+}
+
+.section-story img.left {
+    height: auto;
+}
+
+.desc-story {
+    /* margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px; */
+    padding: 25px 100px 150px;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-size: 40px;
+}
+
+.our-menu {
+    background: rgba(175, 130, 96, 1);
+    font-family: "Secular One", sans-serif;
+    font-size: 50px;
+    padding: 30px;
+    padding-top: -30px;
+    color: rgba(250, 238, 209, 1);
+    /* text-align: center; */
+    /* Memusatkan judul */
+}
+
+.our-menu,
+.menu-kiri {
+    display: flex;
+    font: 50px;
+}
+
+
+/* .our-menu img.float {
+    float: right;
+} */
+
+.menu-kiri {
+    display: flex;
+    /* Menyusun elemen secara horizontal */
+    align-items: center;
+    /* Menyelaraskan item secara vertikal */
+    margin-left: 170px;
+    /* Mengatur jarak atas dan bawah */
+    padding: 10px;
+    /* Jarak dalam */
+    width: 250px;
+    /* Atur lebar sesuai kebutuhan */
+}
+
+.coffe {
+    width: 80px;
+    /* Lebar gambar */
+    /* margin-left: 80px; */
+    /* Jarak antara gambar dan informasi */
+}
+
+.coffe-element {
+    float: right;
+    margin-left: 798px;
+    margin-top: 20px;
+    margin-bottom: -30px;
+    width: 250px;
+}
+
+.name_price {
+    display: flex;
+    /* Menyusun nama dan harga */
+    flex-direction: column;
+    /* Menempatkan nama di atas harga */
+}
+
+.name_price h4,
+.name_price p {
+    margin: 0;
+    margin-left: 20px;
+    color: rgba(250, 238, 209, 1);
+    /* Menghilangkan margin default */
+}
+
+
+/* Mengatur gaya tambahan jika diperlukan */
+
+.name_price h4 {
+    font-family: "Secular One", sans-serif;
+    font-size: 20px;
+    /* color: rgba(250, 238, 209, 1); */
+    /* Ukuran font untuk nama kopi */
+}
+
+.name_price p {
+    font-family: "Scope One", serif;
+    font-size: 16px;
+    /* Ukuran font untuk harga */
+    /* color: #555; */
+    /* Warna untuk harga */
+}
+
+
+.section-kanan {
+    display: inline-block;
+    margin-top: 133px;
+}
+
+.section-myteam {
+    margin: 0;
+    background-color: rgba(228, 197, 158, 1);
+}
+
+.myteam {
+    /* margin-top: 0px; */
+    margin-left: 20px;
+    padding: 40px;
+    font-size: 50px;
+    font-family: "Secular One", serif;
+}
+
+.my-team {
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.border-team {
+    margin-top: 10px;
+    font-size: 25px;
+    /* justify-content: space-between; */
+    text-align: center;
+}
+
+.border-team h4,
+.border-team p {
+    margin: 0;
+}
+
+.border-team h4{
+    font-family: "Secular One", serif;
+    color: rgba(175, 130, 96, 1);
+}
+
+.border-team p{
+    font-family: "Secular One", serif;
+    color: rgba(175, 130, 96, 1);
+}
+
+.border-team img {
+    border: 1px solid brown;
+    border-radius: 50%;
+    width: 200px;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: brown;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}

@@ -1,0 +1,25 @@
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        background-color: #e0d6c9;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header {
+        background-color: #9e7c62;
+        padding: 10px 0;
+        color: #fff;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space
